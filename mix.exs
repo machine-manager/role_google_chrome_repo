@@ -1,9 +1,9 @@
-defmodule RoleWine.Mixfile do
+defmodule RoleVirtualboxHost.Mixfile do
 	use Mix.Project
 
 	def project do
 		[
-			app:             :role_wine,
+			app:             :role_virtualbox_host,
 			version:         "0.1.0",
 			elixir:          ">= 1.4.0",
 			build_embedded:  Mix.env == :prod,
