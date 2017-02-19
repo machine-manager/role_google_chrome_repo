@@ -8,7 +8,7 @@ defmodule RoleWine do
 		wine_packages = [
 			"wine-staging",
 			"winehq-staging", # to set up wine-staging as the default wine (/usr/bin/wine)
-			"winetricks",     # note we have a newer version in custom-packages
+			"winetricks",     # note that we have a newer version in custom-packages
 		]
 		%{
 			desired_packages: wine_packages,
