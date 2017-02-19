@@ -1,4 +1,4 @@
-alias Converge.{Util, All, FilePresent}
+alias Converge.{Util, All, FilePresent, FileMissing}
 
 defmodule RoleGoogleChromeRepo do
 	require Util
