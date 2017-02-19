@@ -12,7 +12,7 @@ defmodule RoleWine do
 		]
 		%{
 			desired_packages: wine_packages,
-			apt_keys:         [content("files/apt_keys/77C899CB Launchpad PPA for Wine.txt")],
+			apt_keys:         [Util.content("files/apt_keys/77C899CB Launchpad PPA for Wine.txt")],
 			apt_sources:      ["deb http://ppa.launchpad.net/wine/wine-builds/ubuntu xenial main"],
 		}
 	end
