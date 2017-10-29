@@ -23,7 +23,7 @@ defmodule RoleGoogleChromeRepo do
 				%FilePresent{path: "/etc/default/google-chrome-unstable", content: "exit 0\n", mode: 0o644},
 			]}
 		%{
-			apt_keys:         [Util.content("files/apt_keys/D38B4796 Google Inc. (Linux Packages Signing Authority).txt")],
+			apt_keys:         [Util.content("files/apt_keys/D38B4796 Google Inc. (Linux Packages Signing Authority).gpg")],
 			apt_sources:      ["deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main"],
 			pre_install_unit: etc_default_files,
 			post_install_unit: %All{units: [
